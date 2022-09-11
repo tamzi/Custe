@@ -7,3 +7,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Custe"
 include(":app")
+include(":custard")
