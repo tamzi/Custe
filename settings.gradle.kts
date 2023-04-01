@@ -1,3 +1,4 @@
+include(":custa")
 
 pluginManagement {
    // includeBuild("build-logic")
