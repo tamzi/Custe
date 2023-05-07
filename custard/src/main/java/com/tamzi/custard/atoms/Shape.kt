@@ -1,4 +1,4 @@
-package com.tamzi.custe.ui.theme
+package com.tamzi.custard.atoms
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Shapes
