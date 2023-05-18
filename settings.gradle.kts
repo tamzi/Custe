@@ -15,6 +15,7 @@ dependencyResolutionManagement {
 rootProject.name = ("Custe")
 include (":app")
 include(":custard")
+include(":curator")
 
 include(":core:data")
 include(":core:database")
@@ -23,3 +24,8 @@ include(":core:domain")
 include(":core:model")
 include(":core:network")
 include(":core:utils")
+
+include(":test:datatest")
+include(":test:hilttest")
+include(":test:datastoretest")
+
