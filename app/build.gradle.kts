@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.tamzi.custe"
+    namespace = "com.custe.app"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.tamzi.custe"
+        applicationId = "com.custe.app"
         minSdk = 26
         targetSdk = 33
         versionCode = 1

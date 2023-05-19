@@ -28,4 +28,8 @@ include(":core:utils")
 include(":test:datatest")
 include(":test:hilttest")
 include(":test:datastoretest")
+include(":test:coretests")
 
+include(":feature:about")
+include(":feature:setting")
+include(":feature:search")
