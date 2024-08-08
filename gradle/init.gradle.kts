@@ -4,10 +4,10 @@ https://docs.gradle.org/current/userguide/init_scripts.html#init_scripts
 
 */
 
-val ktlintVersion = "0.48.2"
+val ktlintVersion = "1.3.1"
 
 initscript {
-    val spotlessVersion = "6.17.0"
+    val spotlessVersion = "6.25.0"
 
     repositories {
         mavenCentral()
