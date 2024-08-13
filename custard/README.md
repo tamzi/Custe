@@ -1,4 +1,0 @@
-## CUSTARD
-
-Custe design system
-

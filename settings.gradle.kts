@@ -1,4 +1,4 @@
-include(":custa")
+include(":custard")
 
 pluginManagement {
    // includeBuild("build-logic")
