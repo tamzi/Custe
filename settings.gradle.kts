@@ -1,7 +1,5 @@
-include(":custard")
-
 pluginManagement {
-   // includeBuild("build-logic")
+   includeBuild("buildLogic")
     repositories {
         google()
         mavenCentral()
@@ -19,3 +17,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Custe"
 include(":app")
+include(":custard")
