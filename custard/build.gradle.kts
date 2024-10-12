@@ -1,15 +1,14 @@
 plugins {
-    alias(libs.plugins.android.library)
-    alias(libs.plugins.jetbrains.kotlin.android)
-    alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.custe.android.library)
+    alias(libs.plugins.custe.android.library.compose)
+    alias(libs.plugins.custe.android.lint)
+    alias(libs.plugins.ktlint)
 }
 
 android {
     namespace = "com.tamzi.custard"
-    compileSdk = 34
 
     defaultConfig {
-        minSdk = 26
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -20,23 +19,16 @@ android {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                "proguard-rules.pro",
             )
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
     kotlinOptions {
-        jvmTarget = "1.8"
-    }
-    buildFeatures {
-        compose = true
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.6.7"
+        jvmTarget = "21"
     }
 }
 
@@ -48,12 +40,10 @@ dependencies {
     api(libs.androidx.compose.material3)
     api(libs.androidx.compose.material3.adaptive)
     api(libs.androidx.compose.material3.navigationSuite)
-    api(libs.androidx.window.core)
     api(libs.androidx.compose.runtime)
     api(libs.androidx.compose.ui.util)
 
     implementation(libs.coil.kt.compose)
-    implementation(libs.androidx.core)
 
     testImplementation(libs.androidx.compose.ui.test)
     testImplementation(libs.androidx.compose.ui.testManifest)

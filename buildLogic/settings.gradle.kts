@@ -11,4 +11,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "buildLogic"
-//include(":convention")
+include(":convention")
